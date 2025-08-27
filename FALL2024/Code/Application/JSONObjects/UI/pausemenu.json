@@ -1,0 +1,35 @@
+{
+  "name": "UI",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "UI/pausemenubackground.json", "UI/resumebutton.json", "UI/howtoplaybutton.json", "UI/settingsbutton.json", "UI/quitbutton.json" ],
+  "components": [
+    {
+      "type": "UIElementManagerComponent",
+      "properties": {
+        "startY": 3.0
+      }
+    },
+    {
+      "type": "PauseMenuComponent",
+      "properties": {
+
+      }
+    }
+  ]
+}

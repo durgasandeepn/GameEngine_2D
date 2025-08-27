@@ -1,0 +1,32 @@
+{
+  "name": "CreditsTitle",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 5.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 5.0,
+      "y": 2.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "UIComponent",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/CreditsTitle.png"
+        }
+      }
+    }
+  ]
+}

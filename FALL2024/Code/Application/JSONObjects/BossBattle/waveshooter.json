@@ -1,0 +1,101 @@
+{
+  "name": "WaveShooter",
+  "tags": [ "enemy" ],
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "BossBattle/waveshootervisual.json" ],
+  "components": [
+    {
+      "type": "PhysicsComponent",
+      "properties": {
+        "mass": 1.0,
+        "isKinematic": false,
+        "useGravity": false,
+        "restitution": 0.5,
+        "friction": 1.0,
+        "terminalVelocity": 5.0,
+        "drag": 7.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "acceleration": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "force": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "layer": "Enemy",
+        "collisionMask": [ "Environment", "Projectile", "Player" ],
+        "shape": {
+          "type": "OBB",
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "halfExtents": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "DebugRenderComponent",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "EnemyComponent",
+      "properties": {
+        "initialState": "Idle",
+        "states": [
+          {
+            "name": "Idle",
+            "properties": {
+              "stateChangeThreshold": 1.0
+            }
+          },
+          {
+            "name": "Wander",
+            "properties": {
+              "wanderSpeed": 2.0,
+              "wanderTimer": 1.0
+            }
+          },
+          {
+            "name": "WaveShoot",
+            "properties": {
+              "maxWaves": 1,
+              "shootInterval": 0.1,
+              "shootSpeed": 8.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "name": "Explosion",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 2.0,
+      "y": 2.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "RenderComponent2D",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/fireball_tileset.png"
+        },
+        "mesh": {
+          "vertices": [
+            -0.5,
+            -0.5,
+            0.0,
+            0.5,
+            -0.5,
+            0.0,
+            0.5,
+            0.5,
+            0.0,
+            -0.5,
+            0.5,
+            0.0
+          ],
+          "texCoords": [
+            0.0,
+            0.0,
+            0.0769,
+            0.0,
+            0.0769,
+            0.125,
+            0.0,
+            0.125
+          ],
+          "indices": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "type": "AnimationComponent",
+      "properties": {
+        "states": [
+          {
+            "name": "Idle",
+            "flipbook": {
+              "animIndex": 5,
+              "frameCount": 8,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 8,
+            "isLoop": true
+          }
+
+        ]
+      }
+    },
+    {
+      "type": "BulletComponent",
+      "properties": {
+        "destroyTime": 1.0,
+        "damage": 0.0
+      }
+    }
+  ]
+}

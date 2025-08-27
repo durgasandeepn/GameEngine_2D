@@ -1,0 +1,45 @@
+{
+  "name": "sfx_player",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": -1.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 10.0,
+      "y": 10.0,
+      "z": 1.0
+    }
+  },
+  "components": [    
+    {
+      "type": "AudioSourceComponent",
+      "properties": {
+        "volume": 1.0,
+        "loop": false,
+        "audioClip": "for-elise-prelude-beethoven-classic-grand-piano-music-1124.mp3"
+      }
+    },
+    {
+      "type": "PlaySoundComponent",
+      "properties": {
+        "soundAttributes": [
+          {
+            "name": "Jump",
+            "file": "laserSmall_004.ogg"
+          },
+          {
+            "name": "Right",
+            "file": "switch3.ogg"
+          }
+        ]
+      }
+    }
+  ]
+}

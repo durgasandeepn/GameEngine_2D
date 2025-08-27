@@ -1,0 +1,72 @@
+{
+  "name": "PlayButton",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 5.0,
+      "y": 2.5,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "UIComponent",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "framesize_vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/play_button.png"
+        }
+      }
+    },
+    {
+      "type": "AnimationComponent",
+      "properties": {
+        "states": [
+          {
+            "name": "Hovered",
+            "flipbook": {
+              "animIndex": 1,
+              "frameCount": 1,
+              "frameWidth": 1,
+              "frameHeight": 0.5,
+              "frameScale": true
+            },
+            "timePerFrame": 0.5,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "Normal",
+            "flipbook": {
+              "animIndex": 0,
+              "frameCount": 1,
+              "frameWidth": 1,
+              "frameHeight": 0.5,
+              "frameScale": true
+            },
+            "timePerFrame": 0.5,
+            "totalFrames": 1,
+            "isLoop": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "UIButtonComponent",
+      "properties": {
+        "uiTag": "Play",
+        "inputDelay": 1.0
+      }
+    }
+  ]
+}

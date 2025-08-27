@@ -1,0 +1,30 @@
+{
+  "name": "audiodemo",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": -1.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 10.0,
+      "y": 10.0,
+      "z": 1.0
+    }
+  },
+  "components": [    
+    {
+      "type": "AudioSourceComponent",
+      "properties": {
+        "volume": 0.5,
+        "loop": true,
+        "audioClip": "Ghost Manifestation 2.mp3"
+      }
+    }
+  ]
+}

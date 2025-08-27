@@ -1,0 +1,167 @@
+{
+  "name": "PlayerVisual",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "RenderComponent2D",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/healer_tilesheet.png"
+        },
+        "mesh": {
+          "vertices": [
+            -0.5,
+            -0.5,
+            0.0,
+            0.5,
+            -0.5,
+            0.0,
+            0.5,
+            0.5,
+            0.0,
+            -0.5,
+            0.5,
+            0.0
+          ],
+          "texCoords": [
+            0.0,0.0,
+            0.0769,0.0,
+            0.0769,0.125,
+            0.0,0.125
+          ],
+          "indices": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "type": "AnimationComponent",
+      "properties": {
+        "states": [
+          {
+            "name": "Idle",
+            "flipbook": {
+              "animIndex": 5,
+              "frameCount": 1,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "IdleRight",
+            "flipbook": {
+              "animIndex": 7,
+              "frameCount": 1,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "IdleLeft",
+            "flipbook": {
+              "animIndex": 8,
+              "frameCount": 1,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "IdleUp",
+            "flipbook": {
+              "animIndex": 6,
+              "frameCount": 1,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "MoveRight",
+            "flipbook": {
+              "animIndex": 7,
+              "frameCount": 3,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+          },
+          {
+            "name": "MoveLeft",
+            "flipbook": {
+              "animIndex": 8,
+              "frameCount": 3,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+          },
+          {
+            "name": "Up",
+            "flipbook": {
+              "animIndex": 6,
+              "frameCount": 3,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+          },
+          {
+            "name": "Down",
+            "flipbook": {
+              "animIndex": 5,
+              "frameCount": 3,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+
+          }
+
+        ]
+      }
+    }
+  ]
+}

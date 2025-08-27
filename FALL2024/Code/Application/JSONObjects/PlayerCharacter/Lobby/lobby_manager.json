@@ -1,0 +1,65 @@
+{
+  "name": "PlayerKeyboard",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "InputComponent",
+      "properties": {
+        "actions": [
+          {
+            "actionName": "JoinKeyboard",
+            "inputType": 0,
+            "inputId": 32
+          },
+          {
+            "actionName": "StartKeyboard",
+            "inputType": 0,
+            "inputId": 257
+          },
+          {
+            "actionName": "CancelLobby",
+            "inputType": 0,
+            "inputId": 256
+          },
+          {
+            "actionName": "JoinController",
+            "inputType": 2,
+            "inputId": 0
+          },
+          {
+            "actionName": "StartController",
+            "inputType": 2,
+            "inputId": 7
+          },
+          {
+            "actionName": "CancelLobbyController",
+            "inputType": 2,
+            "inputId": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "LobbyManagerComponent",
+      "properties": {
+
+      }
+    }
+  ]
+}

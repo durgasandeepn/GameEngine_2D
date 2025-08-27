@@ -1,0 +1,36 @@
+{
+  "name": "SettingsMenu",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "UI/Settings/settingsmenubackground.json", "UI/Settings/fullscreenbutton.json", "UI/Settings/windowedbutton.json", "UI/Settings/1920x1080button.json", "UI/Settings/1600x900button.json", "UI/Settings/1280x720button.json", "UI/Settings/musicslider.json", "UI/Settings/ambienceslider.json", "UI/Settings/sfxslider.json", "UI/Settings/backbutton.json" ],
+  "components": [
+    {
+      "type": "UIElementManagerComponent",
+      "properties": {
+        "startY": 4.5,
+        "elementMargin": 0.6
+      }
+    },
+    {
+      "type": "SettingsMenuComponent",
+      "properties": {
+
+      }
+    }
+  ]
+}

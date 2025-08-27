@@ -1,0 +1,167 @@
+{
+  "name": "boss_Visual",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "RenderComponent2D",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/boss.png"
+        },
+        "mesh": {
+          "vertices": [
+            -0.5,
+            -0.5,
+            0.0,
+            0.5,
+            -0.5,
+            0.0,
+            0.5,
+            0.5,
+            0.0,
+            -0.5,
+            0.5,
+            0.0
+          ],
+          "texCoords": [
+            0.0,0.0,
+            0.0769,0.0,
+            0.0769,0.125,
+            0.0,0.125
+          ],
+          "indices": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "type": "AnimationComponent",
+      "properties": {
+        "states": [
+          {
+            "name": "Idle",
+            "flipbook": {
+              "animIndex": 1,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 4,
+            "isLoop": true
+          },
+          {
+            "name": "PrepareCharge",
+            "flipbook": {
+              "animIndex": 2,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 4,
+            "isLoop": true
+          },
+          {
+            "name": "Charge",
+            "flipbook": {
+              "animIndex": 3,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 4,
+            "isLoop": true
+          },
+          {
+            "name": "PrepareShoot",
+            "flipbook": {
+              "animIndex": 4,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 4,
+            "isLoop": true
+          },
+          {
+            "name": "Shoot",
+            "flipbook": {
+              "animIndex": 5,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 4,
+            "isLoop": true
+          },
+          {
+            "name": "PrepareSpawn",
+            "flipbook": {
+              "animIndex": 6,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+          },
+          {
+            "name": "Spawn",
+            "flipbook": {
+              "animIndex": 7,
+              "frameCount": 4,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+          },
+          {
+            "name": "Down",
+            "flipbook": {
+              "animIndex": 5,
+              "frameCount": 3,
+              "frameWidth": 0.0769,
+              "frameHeight": 0.125
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 3,
+            "isLoop": true
+
+          }
+
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "MusicSlider",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "UIComponent",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "framesize_vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/healthUI.png"
+        }
+      }
+    },
+    {
+      "type": "UISliderComponent",
+      "properties": {
+        "uiTag": "Music",
+        "halfWidth": 2.5,
+        "halfHeight": 0.6,
+        "inputDelay": 0.01
+      }
+    }
+  ]
+}

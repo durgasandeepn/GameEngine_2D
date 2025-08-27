@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Code\Application\Components\MovementComponent2D.cpp" />
+    <ClCompile Include="Code\Core\Engine.cpp" />
+    <ClCompile Include="Code\Core\GameWindow.cpp" />
+    <ClCompile Include="Code\Core\Input\Input.cpp" />
+    <ClCompile Include="Code\Core\Math\Matrix4.cpp" />
+    <ClCompile Include="Code\Core\Math\Transform.cpp" />
+    <ClCompile Include="Code\Core\Math\Vector3.cpp" />
+    <ClCompile Include="Code\Core\Object\ComponentCreator.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\PhysicsComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\RenderComponent2D.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\AudioSourceComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\GameObject.cpp" />
+    <ClCompile Include="Code\Core\Object\GameObjectFactory.cpp" />
+    <ClCompile Include="Code\Core\Object\Node.cpp" />
+    <ClCompile Include="Code\Core\Physics\AABB.cpp" />
+    <ClCompile Include="Code\Core\Physics\Circle.cpp" />
+    <ClCompile Include="Code\Core\Physics\CollisionGenerator.cpp" />
+    <ClCompile Include="Code\Core\Physics\OBB.cpp" />
+    <ClCompile Include="Code\Core\Physics\PhysicsBody.cpp" />
+    <ClCompile Include="Code\Core\Physics\PhysicsManager.cpp" />
+    <ClCompile Include="Code\Core\Renderer\GeometryBuffer.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Material.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Mesh.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Renderer.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Shader.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Texture.cpp" />
+    <ClCompile Include="Code\Core\ResourceManagement\ResourceManager.cpp" />
+    <ClCompile Include="Code\Core\SceneManagement\SceneGraph.cpp" />
+    <ClCompile Include="Code\Core\SceneManagement\SceneManager.cpp" />
+    <ClCompile Include="Code\Core\Sound\AudioClip.cpp" />
+    <ClCompile Include="Code\Core\Time\Time.cpp" />
+    <ClCompile Include="Code\main.cpp" />
+    <ClCompile Include="Code\Core\Input\InputAction.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\InputComponent.cpp" />
+    <ClCompile Include="Code\Core\Animation\AnimationController.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\AnimationComponent.cpp" />
+    <ClCompile Include="Code\Core\Animation\AnimationPlayer.cpp" />
+    <ClCompile Include="Code\Core\MemoryManagement\MemoryManager.cpp" />
+    <ClCompile Include="Code\Core\Sound\AudioManager.cpp" />
+    <ClCompile Include="Code\Application\Components\PlaySoundComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\CameraComponent.cpp" />
+    <ClCompile Include="Code\Application\Components\CameraMovementComponent.cpp" />
+    <ClCompile Include="Code\Application\DebugWindow\ImguiWrapper.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_demo.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_draw.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_tables.cpp" />
+    <ClCompile Include="Code\Core\Imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\DebugRenderComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\GameplayDemo.cpp" />
+    <ClCompile Include="Code\Application\Components\PlayBGMComponent.cpp" />
+    <ClCompile Include="Code\Core\SceneManagement\Scene.cpp" />
+    <ClCompile Include="Code\precompiled.cpp" />
+    <ClCompile Include="Code\Application\Components\BulletComponent.cpp" />
+    <ClCompile Include="Code\Application\Components\HealthComponent.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\Dungeon.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonBoss.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonOne.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonThankYou.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonTwo.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonZero.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonZeroTwo.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\EmptyDungeonBeforeBoss.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\EnemyCreator.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\PlayerCreator.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\Room.cpp" />
+    <ClCompile Include="Code\Application\Managers\GameManager.cpp" />
+    <ClCompile Include="Code\Application\Managers\GameResourceManager.cpp" />
+    <ClCompile Include="Code\Application\Managers\GlobalSoundManager.cpp" />
+    <ClCompile Include="Code\Application\Components\EnemyComponent.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\ChargeState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\IdleState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\PrepareChargeState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\PrepareShootState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\PrepareSpawnState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\ShootState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\SpawnState.cpp" />
+    <ClCompile Include="Code\Core\Renderer\Renderable.cpp" />
+    <ClCompile Include="Code\Core\Renderer\RenderManager.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\UIComponent.cpp" />
+    <ClCompile Include="Code\Core\Renderer\DebugRenderable.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonObjectCreator.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\AIEntity.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\WanderState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\SeekState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\BossIdleState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\StrafeShootState.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\State.cpp" />
+    <ClCompile Include="Code\Application\Scenes\Lobby.cpp" />
+    <ClCompile Include="Code\Application\Lobby\LobbyUICreator.cpp" />
+    <ClCompile Include="Code\Application\Components\PlayerLobbyComponent.cpp" />
+    <ClCompile Include="Code\Application\Components\LobbyManagerComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\MainMenu.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\UIElementManagerComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\UIButtonComponent.cpp" />
+    <ClCompile Include="Code\Application\Components\MainMenuComponent.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonThree.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonFour.cpp" />
+    <ClCompile Include="Code\Application\Dungeon\DungeonFive.cpp" />
+    <ClCompile Include="Code\Core\Math\UUIDGenerator.cpp" />
+    <ClCompile Include="Code\Application\Components\TransitionComponent.cpp" />
+    <ClCompile Include="Code\Application\Components\PauseMenuComponent.cpp" />
+    <ClCompile Include="Code\Application\Managers\TransitionManager.cpp" />
+    <ClCompile Include="Code\Application\Scenes\DigiPenSplashScene.cpp" />
+    <ClCompile Include="Code\Application\Scenes\SplashScene.cpp" />
+    <ClCompile Include="Code\Application\Scenes\FmodSplashScene.cpp" />
+    <ClCompile Include="Code\Application\Scenes\PauseScene.cpp" />
+    <ClCompile Include="Code\Application\Components\QuitConfirmationComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\QuitConfirmationScene.cpp" />
+    <ClCompile Include="Code\Application\Scenes\SettingsScene.cpp" />
+    <ClCompile Include="Code\Application\Components\SettingsMenuComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\UISliderComponent.cpp" />
+    <ClCompile Include="Code\Core\Object\Components\UIElementComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\ControllerScreenScene.cpp" />
+    <ClCompile Include="Code\Application\Components\HowToPlayComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\HowToPlayScene.cpp" />
+    <ClCompile Include="Code\Application\Scenes\CreditsScene.cpp" />
+    <ClCompile Include="Code\Application\Components\CreditsMenuComponent.cpp" />
+    <ClCompile Include="Code\Application\Scenes\EndGameScene.cpp" />
+    <ClCompile Include="Code\Application\StateMachine\WaveShootState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Application\Components\MovementComponent2D.h" />
+    <ClInclude Include="Code\Application\Events\PlayerDestroyEvent.h" />
+    <ClInclude Include="Code\Application\Events\PlayerSpawnEvent.h" />
+    <ClInclude Include="Code\Core\Engine.h" />
+    <ClInclude Include="Code\Core\Event\Event.h" />
+    <ClInclude Include="Code\Core\Event\EventManager.h" />
+    <ClInclude Include="Code\Core\Event\EventManager.hpp" />
+    <ClInclude Include="Code\Core\Event\Events\CollisionEvent.h" />
+    <ClInclude Include="Code\Core\Event\Events\SceneTransitionEvent.h" />
+    <ClInclude Include="Code\Core\GameWindow.h" />
+    <ClInclude Include="Code\Core\Input\Input.h" />
+    <ClInclude Include="Code\Core\Input\InputCodes.h" />
+    <ClInclude Include="Code\Core\Math\Matrix4.h" />
+    <ClInclude Include="Code\Core\Math\Transform.h" />
+    <ClInclude Include="Code\Core\Math\Vector3.h" />
+    <ClInclude Include="Code\Core\Object\ComponentCreator.h" />
+    <ClInclude Include="Code\Core\Object\Components\CameraComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\Component.h" />
+    <ClInclude Include="Code\Core\Object\Components\PhysicsComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\RenderComponent2D.h" />
+    <ClInclude Include="Code\Core\Object\GameObject.h" />
+    <ClInclude Include="Code\Core\Object\GameObjectFactory.h" />
+    <ClInclude Include="Code\Core\Object\Node.h" />
+    <ClInclude Include="Code\Core\Object\RootNode.h" />
+    <ClInclude Include="Code\Core\Physics\AABB.h" />
+    <ClInclude Include="Code\Core\Physics\Circle.h" />
+    <ClInclude Include="Code\Core\Physics\CollisionGenerator.h" />
+    <ClInclude Include="Code\Core\Physics\Contact.h" />
+    <ClInclude Include="Code\Core\Physics\OBB.h" />
+    <ClInclude Include="Code\Core\Physics\PhysicsBody.h" />
+    <ClInclude Include="Code\Core\Physics\PhysicsManager.h" />
+    <ClInclude Include="Code\Core\Physics\Shape.h" />
+    <ClInclude Include="Code\Core\Renderer\GeometryBuffer.h" />
+    <ClInclude Include="Code\Core\Renderer\Material.h" />
+    <ClInclude Include="Code\Core\Renderer\Mesh.h" />
+    <ClInclude Include="Code\Core\Renderer\Renderer.h" />
+    <ClInclude Include="Code\Core\Renderer\Shader.h" />
+    <ClInclude Include="Code\Core\Renderer\Texture.h" />
+    <ClInclude Include="Code\Core\ResourceManagement\ResourceManager.h" />
+    <ClInclude Include="Code\Core\SceneManagement\Scene.h" />
+    <ClInclude Include="Code\Core\SceneManagement\SceneGraph.h" />
+    <ClInclude Include="Code\Core\SceneManagement\SceneManager.h" />
+    <ClInclude Include="Code\Core\Time\Time.h" />
+    <ClInclude Include="Code\Core\Input\InputAction.h" />
+    <ClInclude Include="Code\Core\Object\Components\InputComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\AnimationComponent.h" />
+    <ClInclude Include="Code\Core\Animation\AnimationController.h" />
+    <ClInclude Include="Code\Core\Animation\AnimationPlayer.h" />
+    <ClInclude Include="Code\Core\Animation\AnimationClip.h" />
+    <ClInclude Include="Code\Core\Engine.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\GameWindow.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Event\Event.h">
+      <Filter>Header Files\Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Event\EventManager.h">
+      <Filter>Header Files\Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Event\EventManager.hpp">
+      <Filter>Header Files\Core\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Event\Events\CollisionEvent.h">
+      <Filter>Header Files\Core\Event\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Event\Events\SceneTransitionEvent.h">
+      <Filter>Header Files\Core\Event\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Input\Input.h">
+      <Filter>Header Files\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Input\InputCodes.h">
+      <Filter>Header Files\Core\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Matrix4.h">
+      <Filter>Header Files\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Transform.h">
+      <Filter>Header Files\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Math\Vector3.h">
+      <Filter>Header Files\Core\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\ComponentCreator.h">
+      <Filter>Header Files\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\GameObject.h">
+      <Filter>Header Files\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\GameObjectFactory.h">
+      <Filter>Header Files\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\Node.h">
+      <Filter>Header Files\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\RootNode.h">
+      <Filter>Header Files\Core\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\Components\CameraComponent.h">
+      <Filter>Header Files\Core\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\Components\Component.h">
+      <Filter>Header Files\Core\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\Components\PhysicsComponent.h">
+      <Filter>Header Files\Core\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Object\Components\RenderComponent2D.h">
+      <Filter>Header Files\Core\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\AABB.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\Circle.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\CollisionGenerator.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\Contact.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\OBB.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\PhysicsBody.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\PhysicsManager.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Physics\Shape.h">
+      <Filter>Header Files\Core\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Geometry.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\GeometryBuffer.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Material.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Mesh.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Renderer.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Shader.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Renderer\Texture.h">
+      <Filter>Header Files\Core\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\ResourceManagement\ResourceManager.h">
+      <Filter>Header Files\Core\ResourceManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\SceneManagement\Scene.h">
+      <Filter>Header Files\Core\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\SceneManagement\SceneGraph.h">
+      <Filter>Header Files\Core\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\SceneManagement\SceneManager.h">
+      <Filter>Header Files\Core\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\Time\Time.h">
+      <Filter>Header Files\Core\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Application\Components\MovementComponent2D.h">
+      <Filter>Header Files\Application\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Application\Events\PlayerDestroyEvent.h">
+      <Filter>Header Files\Application\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Application\Events\PlayerSpawnEvent.h">
+      <Filter>Header Files\Application\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Core\MemoryManagement\MemoryManager.h" />
+    <ClInclude Include="Code\Core\Sound\AudioManager.h" />
+    <ClInclude Include="Code\Application\Components\PlaySoundComponent.h" />
+    <ClInclude Include="Code\Core\Event\Events\CameraCreatedEvent.h" />
+    <ClInclude Include="Code\Application\Components\CameraMovementComponent.h" />
+    <ClInclude Include="Code\Application\Scenes\GameplayDemo.h" />
+    <ClInclude Include="Code\Application\Components\PlayBGMComponent.h" />
+    <ClInclude Include="Code\Core\Event\Events\ObjectCreatedEvent.h" />
+    <ClInclude Include="Code\Core\Event\Events\ObjectDeletedEvent.h" />
+    <ClInclude Include="Code\precompiled.h" />
+    <ClInclude Include="Code\Core\Physics\CollisionLayer.h" />
+    <ClInclude Include="Code\Application\Components\BulletComponent.h" />
+    <ClInclude Include="Code\Application\Components\HealthComponent.h" />
+    <ClInclude Include="Code\Application\Dungeon\Dungeon.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonBoss.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonOne.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonThankYou.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonTwo.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonZero.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonZeroTwo.h" />
+    <ClInclude Include="Code\Application\Dungeon\EmptyDungeonBeforeBoss.h" />
+    <ClInclude Include="Code\Application\Dungeon\EnemyCreator.h" />
+    <ClInclude Include="Code\Application\Dungeon\PlayerCreator.h" />
+    <ClInclude Include="Code\Application\Dungeon\Room.h" />
+    <ClInclude Include="Code\Application\Managers\GameManager.h" />
+    <ClInclude Include="Code\Application\Managers\GameResourceManager.h" />
+    <ClInclude Include="Code\Application\Managers\GlobalSoundManager.h" />
+    <ClInclude Include="Code\Application\Components\EnemyComponent.h" />
+    <ClInclude Include="Code\Application\StateMachine\AIEntity.h" />
+    <ClInclude Include="Code\Application\StateMachine\ChargeState.h" />
+    <ClInclude Include="Code\Application\StateMachine\IdleState.h" />
+    <ClInclude Include="Code\Application\StateMachine\PrepareChargeState.h" />
+    <ClInclude Include="Code\Application\StateMachine\PrepareShootState.h" />
+    <ClInclude Include="Code\Application\StateMachine\PrepareSpawnState.h" />
+    <ClInclude Include="Code\Application\StateMachine\ShootState.h" />
+    <ClInclude Include="Code\Application\StateMachine\SpawnState.h" />
+    <ClInclude Include="Code\Application\StateMachine\State.h" />
+    <ClInclude Include="Code\Core\Renderer\RenderManager.h" />
+    <ClInclude Include="Code\Core\Renderer\Renderable.h" />
+    <ClInclude Include="Code\Core\Object\Components\UIComponent.h" />
+    <ClInclude Include="Code\Core\Renderer\DebugRenderable.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonObjectCreator.h" />
+    <ClInclude Include="Code\Application\StateMachine\WanderState.h" />
+    <ClInclude Include="Code\Application\StateMachine\SeekState.h" />
+    <ClInclude Include="Code\Application\StateMachine\BossIdleState.h" />
+    <ClInclude Include="Code\Application\StateMachine\StrafeShootState.h" />
+    <ClInclude Include="Code\Application\Scenes\Lobby.h" />
+    <ClInclude Include="Code\Application\Lobby\LobbyUICreator.h" />
+    <ClInclude Include="Code\Application\Components\PlayerLobbyComponent.h" />
+    <ClInclude Include="Code\Application\Components\LobbyManagerComponent.h" />
+    <ClInclude Include="Code\Application\Scenes\MainMenu.h" />
+    <ClInclude Include="Code\Core\Object\Components\UIElementManagerComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\UIButtonComponent.h" />
+    <ClInclude Include="Code\Core\Event\Events\UIButtonPressedEvent.h" />
+    <ClInclude Include="Code\Application\Components\MainMenuComponent.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonThree.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonFour.h" />
+    <ClInclude Include="Code\Application\Dungeon\DungeonFive.h" />
+    <ClInclude Include="Code\Core\Math\UUIDGenerator.h" />
+    <ClInclude Include="Code\Application\Components\TransitionComponent.h" />
+    <ClInclude Include="Code\Application\Components\PauseMenuComponent.h" />
+    <ClInclude Include="Code\Application\Managers\TransitionManager.h" />
+    <ClInclude Include="Code\Application\Scenes\DigiPenSplashScene.h" />
+    <ClInclude Include="Code\Application\Scenes\SplashScene.h" />
+    <ClInclude Include="Code\Application\Scenes\FmodSplashScene.h" />
+    <ClInclude Include="Code\Application\Scenes\PauseScene.h" />
+    <ClInclude Include="Code\Application\Components\QuitConfirmationComponent.h" />
+    <ClInclude Include="Code\Application\Scenes\QuitConfirmationScene.h" />
+    <ClInclude Include="Code\Application\Scenes\SettingsScene.h" />
+    <ClInclude Include="Code\Application\Components\SettingsMenuComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\UISliderComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\UIElementComponent.h" />
+    <ClInclude Include="Code\Core\Event\Events\UISliderValueChangedEvent.h" />
+    <ClInclude Include="Code\Application\Scenes\ControllerScreenScene.h" />
+    <ClInclude Include="Code\Application\Components\HowToPlayComponent.h" />
+    <ClInclude Include="Code\Application\Scenes\HowToPlayScene.h" />
+    <ClInclude Include="Code\Application\Scenes\CreditsScene.h" />
+    <ClInclude Include="Code\Application\Components\CreditsMenuComponent.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Code\Application\Scenes\EndGameScene.h" />
+    <ClInclude Include="Code\Application\StateMachine\WaveShootState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Core\Engine.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\GameWindow.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Input\Input.cpp">
+      <Filter>Source Files\Core\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Math\Matrix4.cpp">
+      <Filter>Source Files\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Math\Transform.cpp">
+      <Filter>Source Files\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Math\Vector3.cpp">
+      <Filter>Source Files\Core\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\ComponentCreator.cpp">
+      <Filter>Source Files\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\GameObject.cpp">
+      <Filter>Source Files\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\GameObjectFactory.cpp">
+      <Filter>Source Files\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\Node.cpp">
+      <Filter>Source Files\Core\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\Components\PhysicsComponent.cpp">
+      <Filter>Source Files\Core\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Object\Components\RenderComponent2D.cpp">
+      <Filter>Source Files\Core\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\AABB.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\Circle.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\CollisionGenerator.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\OBB.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\PhysicsBody.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Physics\PhysicsManager.cpp">
+      <Filter>Source Files\Core\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\GeometryBuffer.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\Material.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\Mesh.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\Renderer.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\Shader.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Renderer\Texture.cpp">
+      <Filter>Source Files\Core\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\ResourceManagement\ResourceManager.cpp">
+      <Filter>Source Files\Core\ResourceManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\SceneManagement\SceneGraph.cpp">
+      <Filter>Source Files\Core\SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\SceneManagement\SceneManager.cpp">
+      <Filter>Source Files\Core\SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Core\Time\Time.cpp">
+      <Filter>Source Files\Core\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Application\Components\MovementComponent2D.cpp">
+      <Filter>Source Files\Application\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Application\Components\MovementComponent2D.h" />
+    <ClInclude Include="Code\Application\Events\PlayerDestroyEvent.h" />
+    <ClInclude Include="Code\Application\Events\PlayerSpawnEvent.h" />
+    <ClInclude Include="Code\Core\Engine.h" />
+    <ClInclude Include="Code\Core\Event\Event.h" />
+    <ClInclude Include="Code\Core\Event\EventManager.h" />
+    <ClInclude Include="Code\Core\Event\EventManager.hpp" />
+    <ClInclude Include="Code\Core\Event\Events\CollisionEvent.h" />
+    <ClInclude Include="Code\Core\Event\Events\SceneTransitionEvent.h" />
+    <ClInclude Include="Code\Core\GameWindow.h" />
+    <ClInclude Include="Code\Core\Input\Input.h" />
+    <ClInclude Include="Code\Core\Input\InputCodes.h" />
+    <ClInclude Include="Code\Core\Math\Matrix4.h" />
+    <ClInclude Include="Code\Core\Math\Transform.h" />
+    <ClInclude Include="Code\Core\Math\Vector3.h" />
+    <ClInclude Include="Code\Core\Object\ComponentCreator.h" />
+    <ClInclude Include="Code\Core\Object\Components\CameraComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\Component.h" />
+    <ClInclude Include="Code\Core\Object\Components\PhysicsComponent.h" />
+    <ClInclude Include="Code\Core\Object\Components\RenderComponent2D.h" />
+    <ClInclude Include="Code\Core\Object\Components\AudioSourceComponent.h" />
+    <ClInclude Include="Code\Core\Object\GameObject.h" />
+    <ClInclude Include="Code\Core\Object\GameObjectFactory.h" />
+    <ClInclude Include="Code\Core\Object\Node.h" />
+    <ClInclude Include="Code\Core\Object\RootNode.h" />
+    <ClInclude Include="Code\Core\Physics\AABB.h" />
+    <ClInclude Include="Code\Core\Physics\Circle.h" />
+    <ClInclude Include="Code\Core\Physics\CollisionGenerator.h" />
+    <ClInclude Include="Code\Core\Physics\Contact.h" />
+    <ClInclude Include="Code\Core\Physics\OBB.h" />
+    <ClInclude Include="Code\Core\Physics\PhysicsBody.h" />
+    <ClInclude Include="Code\Core\Physics\PhysicsManager.h" />
+    <ClInclude Include="Code\Core\Physics\Shape.h" />
+    <ClInclude Include="Code\Core\Renderer\Geometry.h" />
+    <ClInclude Include="Code\Core\Renderer\GeometryBuffer.h" />
+    <ClInclude Include="Code\Core\Renderer\Material.h" />
+    <ClInclude Include="Code\Core\Renderer\Mesh.h" />
+    <ClInclude Include="Code\Core\Renderer\Renderer.h" />
+    <ClInclude Include="Code\Core\Renderer\Shader.h" />
+    <ClInclude Include="Code\Core\Renderer\Texture.h" />
+    <ClInclude Include="Code\Core\ResourceManagement\ResourceManager.h" />
+    <ClInclude Include="Code\Core\SceneManagement\Scene.h" />
+    <ClInclude Include="Code\Core\SceneManagement\SceneGraph.h" />
+    <ClInclude Include="Code\Core\SceneManagement\SceneManager.h" />
+    <ClInclude Include="Code\Core\Sound\AudioClip.h" />
+    <ClInclude Include="Code\Core\Time\Time.h" />
+    <None Include="Code\Application\Shaders\color_fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\color_vertex_shader.glsl" />
+    <None Include="Code\Application\Shaders\fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\texture_fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\texture_vertex_shader.glsl" />
+    <ClInclude Include="Code\Application\DebugWindow\ImguiWrapper.h" />
+    <ClInclude Include="Code\Core\Imgui\imconfig.h" />
+    <ClInclude Include="Code\Core\Imgui\imgui.h" />
+    <ClInclude Include="Code\Core\Imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Code\Core\Imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Code\Core\Imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Code\Core\Imgui\imgui_internal.h" />
+    <ClInclude Include="Code\Core\Imgui\imstb_rectpack.h" />
+    <ClInclude Include="Code\Core\Imgui\imstb_textedit.h" />
+    <ClInclude Include="Code\Core\Imgui\imstb_truetype.h" />
+    <ClInclude Include="Code\Core\Object\Components\DebugRenderComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Application\Shaders\color_fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\color_vertex_shader.glsl" />
+    <None Include="Code\Application\Shaders\fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\texture_fragment_shader.glsl" />
+    <None Include="Code\Application\Shaders\texture_vertex_shader.glsl" />
+    <None Include="Code\Application\Shaders\vertex_shader.glsl" />
+    <None Include="Code\Application\Shaders\vertex_shader.glsl" />
+    <None Include="Code\Application\JSONObjects\basicOrthoCamera.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\keyboardBlueCharacter.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\controllerBlueCharacter.json" />
+    <Text Include="Code\Application\JSONObjects\PlayerCharacter\controllerPinkCharacter.json" />
+    <Text Include="Code\Application\JSONObjects\PlayerCharacter\controllerRedCharacter.json" />
+    <Text Include="Code\Application\JSONObjects\gameplayarea.json" />
+    <Text Include="Code\Application\JSONObjects\gameplaycamera.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\blueCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\controllerGreenCharacter.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\boss.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\boss_visual.JSON" />
+    <None Include="Code\Application\JSONObjects\BossBattle\enemy_bullet.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\minion.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\minion_visual.JSON" />
+    <None Include="Code\Application\JSONObjects\BossBattle\ranger_bullet.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\explosion.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\healer_bullet.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\healerCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\BossBattle\tankCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\BossBattle\ghost2.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\ghost2_visual.JSON" />
+    <None Include="Code\Application\JSONObjects\UI\backgroundUI.json" />
+    <None Include="Code\Application\JSONObjects\UI\p1UI.json" />
+    <None Include="Code\Application\JSONObjects\UI\p2UI.json" />
+    <None Include="Code\Application\JSONObjects\UI\p3UI.json" />
+    <None Include="Code\Application\JSONObjects\UI\p4UI.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\door.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\newPoint.json" />
+    <None Include="Code\Application\JSONObjects\UI\reviveUI.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\player_bullet_visual.JSON" />
+    <None Include="Code\Application\JSONObjects\BossBattle\healer_bullet_visual.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\enemy_bullet_visual.json" />
+    <None Include="Code\Application\JSONObjects\Sound\environment_player.json" />
+    <None Include="Code\Application\JSONObjects\UI\healthUI_player.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\revive_tutorial.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\move_tutorial.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\attack_tutorial.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\thank_you.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\game_over.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\pinkCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\greenCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\redCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\UI\lobbyUI.json" />
+    <None Include="Code\Application\JSONObjects\UI\character_selection.JSON" />
+    <None Include="Code\Application\JSONObjects\UI\lobby_character_backgroundUI.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\Lobby\playerKeyboardLobby.json" />
+    <None Include="Code\Application\JSONObjects\UI\character_selection_visual.JSON" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\Lobby\playerControllerLobby.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\gameplaycharacter4.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\Lobby\lobby_manager.json" />
+    <None Include="Code\Application\JSONObjects\UI\playbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\quitbutton.json" />
+    <None Include="Code\Application\Shaders\framesize_vertex_shader.glsl" />
+    <None Include="Code\Application\JSONObjects\UI\mainmenubackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\lovewizards.json" />
+    <None Include="Code\Application\JSONObjects\UI\mainmenubuttonmanager.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\gameplaycharacter4.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\pointer.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\showcaseCharacterVisual.JSON" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\gameplaycharacter.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\gameplaycharacter1.json" />
+    <None Include="Code\Application\JSONObjects\UI\join_prompt.json" />
+    <None Include="Code\Application\JSONObjects\UI\ready_indicator.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\keyboardRedCharacter.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\keyboardPinkCharacter.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\keyboardGreenCharacter.json" />
+    <None Include="Code\Application\JSONObjects\Tutorial\aim_tutorial.json" />
+    <None Include="Code\Application\JSONObjects\UI\pausemenu.json" />
+    <None Include="Code\Application\JSONObjects\UI\SplashScene\fModSplash.json" />
+    <None Include="Code\Application\JSONObjects\UI\FadeBlackUI\fadeInUI.json" />
+    <None Include="Code\Application\JSONObjects\UI\FadeBlackUI\fadeOutUI.json" />
+    <None Include="Code\Application\JSONObjects\UI\SplashScene\digiPenSplash.json" />
+    <None Include="Code\Application\JSONObjects\UI\pausemenubackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\resumebutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\QuitConfirmation\quitconfirmation.json" />
+    <None Include="Code\Application\JSONObjects\UI\QuitConfirmation\quitconfirmationbackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\QuitConfirmation\yesToQuitButton.json" />
+    <None Include="Code\Application\JSONObjects\UI\QuitConfirmation\noToQuitButton.json" />
+    <None Include="Code\Application\JSONObjects\UI\settingsbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\settingsmenu.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\settingsmenubackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\fullscreenbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\1600x900button.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\1280x720button.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\1920x1080button.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\windowedbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\musicslider.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\sfxslider.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\backbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\Settings\ambienceslider.json" />
+    <None Include="Code\Application\JSONObjects\UI\SplashScene\controllerscreen.json" />
+    <None Include="Code\Application\JSONObjects\UI\howtoplaybutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\HowToPlay\howtoplay.json" />
+    <None Include="Code\Application\JSONObjects\UI\HowToPlay\howtoplaybackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\creditsbutton.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\creditsmenu.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\digipenlogo.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\creditstext.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\knightlybuildlogo.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\creditsmenubackground.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\creditstitle.json" />
+    <None Include="Code\Application\JSONObjects\UI\Credits\thanksforplaying.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\barrier.json" />
+    <None Include="Code\Application\JSONObjects\character_select_bg.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\charge_indicator.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\heart_indicator.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\player_bullet_explosion.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\full_charge_indicator.json" />
+    <None Include="Code\Application\JSONObjects\UI\heartHealthUI.json" />
+    <None Include="Code\Application\JSONObjects\PlayerCharacter\full_heart_indicator.json" />
+    <None Include="Code\Application\JSONObjects\UI\SplashScene\endgameScene.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\waveshooter.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\waveshooterbullet.json" />
+    <None Include="Code\Application\JSONObjects\BossBattle\waveshootervisual.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\textures\bg1.png" />
+    <Image Include="assets\textures\Controller.png" />
+    <Image Include="assets\textures\how_to_play_button.png" />
+    <Image Include="assets\textures\howtoplay.png" />
+    <Image Include="assets\textures\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="include\fmod\core\lib\x64\fmod_vc.lib" />
+    <Library Include="include\fmod\core\lib\x64\fmodL_vc.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="include\fmod\core\lib\x64\fmodL.dll" />
+    <CopyFileToFolders Include="include\fmod\core\lib\x64\fmod.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FALL2024.rc" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,65 @@
+{
+  "name": "PlayerKeyboard",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "InputComponent",
+      "properties": {
+        "actions": [
+          {
+            "actionName": "Left",
+            "inputType": 0,
+            "inputId": 65
+          },
+          {
+            "actionName": "Right",
+            "inputType": 0,
+            "inputId": 68
+          },
+          {
+            "actionName": "Up",
+            "inputType": 0,
+            "inputId": 87
+          },
+          {
+            "actionName": "Down",
+            "inputType": 0,
+            "inputId": 83
+          },
+          {
+            "actionName": "Confirm",
+            "inputType": 0,
+            "inputId": 32
+          },
+          {
+            "actionName": "Cancel",
+            "inputType": 0,
+            "inputId": 256
+          }
+        ]
+      }
+    },
+    {
+      "type": "PlayerLobbyComponent",
+      "properties": {
+
+      }
+    }
+  ]
+}

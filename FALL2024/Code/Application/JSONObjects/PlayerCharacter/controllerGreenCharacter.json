@@ -1,0 +1,184 @@
+{
+  "name": "Player",
+  "tags": [ "player" ],
+  "transform": {
+    "position": {
+      "x": 2.0,
+      "y": 2.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 2.0,
+      "y": 2.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "PlayerCharacter/greenCharacterVisual.json" ],
+  "components": [
+    {
+      "type": "PhysicsComponent",
+      "properties": {
+        "mass": 1.0,
+        "isKinematic": false,
+        "useGravity": false,
+        "restitution": 0.5,
+        "friction": 20.0,
+        "terminalVelocity": 15.0,
+        "drag": 7.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "acceleration": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "force": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "layer": "Player",
+        "collisionMask": [ "Environment", "EnemyProjectile", "Enemy", "Default", "Player", "HealerProjectile" ],
+        "shape": {
+          "type": "OBB",
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "halfExtents": {
+            "x": 0.35,
+            "y": 0.35,
+            "z": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "InputComponent",
+      "properties": {
+        "actions": [
+          {
+            "actionName": "Special",
+            "inputType": 2,
+            "inputId": 4
+          },
+          {
+            "actionName": "Shoot",
+            "inputType": 2,
+            "inputId": 5
+          },
+          {
+            "actionName": "Cancel",
+            "inputType": 2,
+            "inputId": 1
+          },
+
+          {
+            "actionName": "Left",
+            "inputType": 2,
+            "inputId": 13
+          },
+          {
+            "actionName": "Right",
+            "inputType": 2,
+            "inputId": 11
+          },
+          {
+            "actionName": "Up",
+            "inputType": 2,
+            "inputId": 10
+          },
+          {
+            "actionName": "Down",
+            "inputType": 2,
+            "inputId": 12
+          },
+          {
+            "actionName": "LeftRightAxis",
+            "inputType": 2,
+            "inputId": 0
+          },
+          {
+            "actionName": "UpDownAxis",
+            "inputType": 2,
+            "inputId": 1
+          },
+          {
+            "actionName": "R_LeftRightAxis",
+            "inputType": 2,
+            "inputId": 2
+          },
+          {
+            "actionName": "R_UpDownAxis",
+            "inputType": 2,
+            "inputId": 3
+          },
+          {
+            "actionName": "RightTrigger",
+            "inputType": 2,
+            "inputId": 5
+          },
+          {
+            "actionName": "LeftTrigger",
+            "inputType": 2,
+            "inputId": 4
+          }
+        ]
+      }
+    },
+    {
+      "type": "MovementComponent2D",
+      "properties": {
+        "moveSpeed": 2.0,
+        "maxMoveSpeed": 5.0,
+        "controller": true
+      }
+    },
+    {
+      "type": "DebugRenderComponent",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "AudioSourceComponent",
+      "properties": {
+        "volume": 1.0,
+        "loop": false,
+        "audioClip": "jingles_NES12"
+      }
+    },
+    {
+      "type": "PlaySoundComponent",
+      "properties": {
+        "soundAttributes": [
+          {
+            "name": "HitPlayer",
+            "file": "impactWood_heavy_001.mp3"
+          },
+          {
+            "name": "HitWall",
+            "file": "impactPlate_heavy_002.mp3"
+          },
+          {
+            "name": "HitBlock",
+            "file": "impactGlass_medium_004.mp3"
+          },
+          {
+            "name": "FootStep",
+            "file": "footstep_snow_004.mp3"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "UI",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "UI/QuitConfirmation/quitconfirmationbackground.json", "UI/QuitConfirmation/noToQuitButton.json", "UI/QuitConfirmation/yesToQuitButton.json" ],
+  "components": [
+    {
+      "type": "UIElementManagerComponent",
+      "properties": {
+        "startY": -2.5
+      }
+    },
+    {
+      "type": "QuitConfirmationComponent",
+      "properties": {
+
+      }
+    }
+  ]
+}

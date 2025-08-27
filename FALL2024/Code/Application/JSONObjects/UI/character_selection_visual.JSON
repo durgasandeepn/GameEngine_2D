@@ -1,0 +1,121 @@
+{
+  "name": "PlayerVisual",
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "components": [
+    {
+      "type": "RenderComponent2D",
+      "properties": {
+        "isVisible": true,
+        "material": {
+          "shader": "vertex_shader.glsl\nfragment_shader.glsl",
+          "texture": "Assets/Textures/character_selection_2.png"
+        },
+        "mesh": {
+          "vertices": [
+            -0.5,
+            -0.5,
+            0.0,
+            0.5,
+            -0.5,
+            0.0,
+            0.5,
+            0.5,
+            0.0,
+            -0.5,
+            0.5,
+            0.0
+          ],
+          "texCoords": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            1.0,
+            0.25,
+            0.0,
+            0.25
+          ],
+          "indices": [
+            0,
+            1,
+            2,
+            2,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "type": "AnimationComponent",
+      "properties": {
+        "states": [
+          {
+            "name": "Blue",
+            "flipbook": {
+              "animIndex": 1,
+              "frameCount": 1,
+              "frameWidth": 1.0,
+              "frameHeight": 0.25
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "Pink",
+            "flipbook": {
+              "animIndex": 2,
+              "frameCount": 1,
+              "frameWidth": 1.0,
+              "frameHeight": 0.25
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "Red",
+            "flipbook": {
+              "animIndex": 3,
+              "frameCount": 1,
+              "frameWidth": 1.0,
+              "frameHeight": 0.25
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          },
+          {
+            "name": "Green",
+            "flipbook": {
+              "animIndex": 4,
+              "frameCount": 1,
+              "frameWidth": 1.0,
+              "frameHeight": 0.25
+            },
+            "timePerFrame": 0.1,
+            "totalFrames": 1,
+            "isLoop": true
+          }
+        ]
+      }
+    }
+  ]
+}

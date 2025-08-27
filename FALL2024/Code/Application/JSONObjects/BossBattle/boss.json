@@ -1,0 +1,134 @@
+{
+  "name": "Boss",
+  "tags": [ "enemy" ],
+  "transform": {
+    "position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "rotation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0
+    }
+  },
+  "children": [ "BossBattle/boss_visual.json" ],
+  "components": [
+    {
+      "type": "PhysicsComponent",
+      "properties": {
+        "mass": 0.1,
+        "isKinematic": false,
+        "useGravity": false,
+        "restitution": 0.5,
+        "friction": 0.0,
+        "terminalVelocity": 100.0,
+        "drag": 0.0,
+        "velocity": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "acceleration": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "force": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "layer": "Enemy",
+        "collisionMask": [ "Environment", "Player", "Projectile" ],
+        "shape": {
+          "type": "OBB",
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "halfExtents": {
+            "x": 0.25,
+            "y": 0.25,
+            "z": 0.0
+          }
+        }
+      }
+    },
+    {
+      "type": "DebugRenderComponent",
+      "properties": {
+
+      }
+    },
+    {
+      "type": "EnemyComponent",
+      "properties": {
+        "initialState": "BossIdle",
+        "states": [
+          {
+            "name": "BossIdle",
+            "properties": {
+              "stateChangeThreshold": 0.5
+            }
+          },
+          {
+            "name": "PrepareCharge",
+            "properties": {}
+          },
+          {
+            "name": "PrepareShoot",
+            "properties": {}
+          },
+          {
+            "name": "PrepareSpawn",
+            "properties": {}
+          },
+          {
+            "name": "Seek",
+            "properties": {
+              "seekSpeed": 3.0,
+              "seekTimer": 1.0
+            }
+          },
+          {
+            "name": "Charge",
+            "properties": {
+              "chargeSpeed": 6.0,
+              "chargeTimer": 3.0,
+              "bulletOnEnter": true
+            }
+          },
+          {
+            "name": "Spawn",
+            "properties": {}
+          },
+          {
+            "name": "Shoot",
+            "properties": {
+              "targetted": true,
+              "maxShots": 6,
+              "shootSpeed": 6.0,
+              "shootMultiplier": 1.0
+            }
+          },
+          {
+            "name": "WaveShoot",
+            "properties": {
+              "maxWaves": 1,
+              "shootInterval": 0.1,
+              "shootSpeed": 8.0
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
